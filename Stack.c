@@ -1,3 +1,4 @@
+//refer by https://www.geeksforgeeks.org/introduction-to-stack-data-structure-and-algorithm-tutorials/
 #ifndef _STDIO_H
     #include <stdio.h>
 #endif
