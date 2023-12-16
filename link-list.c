@@ -1,21 +1,5 @@
-#ifndef _STDIO_H
-    #include <stdio.h>
-#endif
-
-typedef struct node node;
-typedef void (*func_v)( node**, int );
- 
-struct node{
-    int val;
-    node *next;
-    func_v push, insert;
-    void (*pop)( node** ); 
-};
-
-static void push_implc( node**, int );
-static void insert_implc( node**, int);
-static void pop_implc(node**);
-void init_node( node **, int);
+#include <stdio.h>
+#include "LinkList.h"
 
 static void push_implc( node** self, int data ){
     node *Node;

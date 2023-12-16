@@ -1,11 +1,6 @@
-#include "Stack.c"
-
-typedef struct Queue{
-    Stack *store;
-    Stack *temp;    
-    void (*enQueue)(struct Queue *q, int val);
-    int (*deQueue)(struct Queue *q);
-}Queue;
+#include <stdio.h>
+#include "Stack.h"
+#include "Queue.h"
 
 static int deQueue_implc( Queue *self ){
     if(((self -> store) -> isEmpty( self -> store ))){

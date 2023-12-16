@@ -1,4 +1,4 @@
-#include "Queue.c"
+#include "Queue.h"
 
 #define autofree \
 __attribute__((cleanup(free_queue)))

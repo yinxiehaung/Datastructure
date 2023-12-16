@@ -1,26 +1,8 @@
 //refer by https://www.geeksforgeeks.org/introduction-to-stack-data-structure-and-algorithm-tutorials/
-#ifndef _STDIO_H
-    #include <stdio.h>
-#endif
-
-#ifndef _STDLIB_H
-    #include <stdlib.h>
-#endif
-
-#ifndef _LIMITS_H
-    #include <limits.h>
-#endif
-
-typedef struct Stack Stack;
-typedef int (*funs)(Stack *stack);
-
-struct Stack{
-    int *array;
-    int top;
-    unsigned int capacity;
-    funs pop, peek, isFULL, isEmpty;
-    void (*push)(Stack *stack, int val);
-};
+#include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
+#include "Stack.h"
 
 static int pop_implc( Stack *self ){
     if( self -> isEmpty(self) ){

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "Stack.c"
+#include "Stack.h"
 
 #define smart_point\
   __attribute__((cleanup(free_stack)))
