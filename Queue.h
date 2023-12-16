@@ -1,5 +1,6 @@
+#include "Stack.h"
 #ifndef _QUEUE_H
-#define 
+#define _QUEUE_H
 typedef struct Queue{
     Stack *store;
     Stack *temp;    
